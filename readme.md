@@ -16,6 +16,26 @@ You've learned about OOP, but let's look at how to **incorporate object oriented
 4. If the user flips two non-matching cards face-up at the same time, both cards will turn back face down.
 5. The user wins when they've matched all the cards!
 
+### Racing Game Story
+1. The racing game is set up between two players, that will race cars across the board.
+2. The players will be able to advance the car 5px per click. 
+3. Both users will have different cars, but the same attributes making everything equal. 
+4. Once a player reaches the other side a message will pop up proclaiming them the winner. 
+5. The game will also have a reset button. 
+6. Sounds can be added to the cars so that each click makes a engine noise. 
+7. One player will use the A button and the other will use L. The player can only go in one direction across the screen.
+
+**Car**
+<details><summary>click for examples properties</summary>
+  - 'carImage' (string)
+  - 'carClick' (function - makes the car advance 5px and makes engine noise)
+**Board**
+<details><summary>click for game exaamples</summary>
+  - 'hasWon' (boolean)
+  - 'background-image'
+  
+
+
 ### Check for Understanding
 
 What are some categories of objects we might want to build when writing the code for a Memory game?

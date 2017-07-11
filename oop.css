@@ -16,3 +16,7 @@ body {
 img{
   display:block;
 }
+h1{
+  color: Green;
+  position: float center;
+}

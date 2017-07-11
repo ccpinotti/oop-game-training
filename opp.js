@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
   $(document).keypress(function(e) {
     if (e.key === "a") {
@@ -10,15 +10,21 @@ $(document).ready(function(){
         left: '+=25px'
       });
     }
-    document.getElementById("Reset").onclick = function() {
-      document.getElementById("button").value = "";
-    };
+    function reload2() {
+      location.reload();
+    }
+    var el = document.getElementById("Restart");
+    el.onclick = reload;
+
+    // document.getElementById("Reset").onclick = function() {
+    //   document.getElementById("button").value = "";
+    // };
 
 
-  //   $('button').on('click',function() {
-  //   $(".key").text("")
-  //
-  // });
+    //   $('button').on('click',function() {
+    //   $(".key").text("")
+    //
+    // });
     // check window width
     // compare width turtle/rabbit position
     // check for winner

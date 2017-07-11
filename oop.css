@@ -1,0 +1,18 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/27/72/88/277288be0b6f38eeee957bc9ab77b55e.jpg);
+
+}
+#rabbit {
+
+  position: relative;
+}
+#turtle {
+
+  position:relative;
+}
+img{
+  display:block;
+}

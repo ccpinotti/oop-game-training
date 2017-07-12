@@ -1,22 +1,35 @@
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/27/72/88/277288be0b6f38eeee957bc9ab77b55e.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/27/72/88/277288be0b6f38eeee957bc9ab77b55e.jpg);
 }
-/*#race {
-  height: 100vh;
-}*/
+
+.border {
+  width: 740px;
+  border-color-right: blue;
+  border-right: 5px dashed black;
+  padding-right:200px
+  clear: both;
+  display: inline-table;
+  border-style-right: dashed;
+}
+
+#race {
+  border-right: bold;
+  border-color: blue;
+  border-right-color: red;
+}
 
 #rabbit {
   position: relative;
-
 }
+
 #turtle {
-  position:relative;
-
+  position: relative;
 }
-button{
+
+button {
   position: right;
   font-family: 'Indie Flower', cursive;
   font-size: 200%;
@@ -28,27 +41,31 @@ button{
   background-color: #7F4A39;
   text-shadow: 2px 2px black;
 }
-img{
-  display:block;
+
+img {
+  display: block;
 }
-h1{
+
+h1 {
   color: #4EB233;
-  width:auto;
+  width: auto;
   font-family: 'Indie Flower', cursive;
   text-align: center;
   font-weight: bold;
   font-size: 90px;
   text-shadow: 2px 2px black;
 }
-h2{
-  color: #4EB233;
+
+h2 {
+  color: #1B9AAA;
   text-align: center;
   font-family: 'Indie Flower', cursive;
   text-shadow: 2px 2px black;
 }
-p{
+
+p {
   color: #4EB233;
-  position:left;
+  position: left;
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
   text-shadow: 2px 2px black;

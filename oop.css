@@ -1,22 +1,45 @@
 body {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
     background-image: url(https://s-media-cache-ak0.pinimg.com/originals/27/72/88/277288be0b6f38eeee957bc9ab77b55e.jpg);
 
 }
 #rabbit {
-
   position: relative;
+  padding-top:300px;
 }
 #turtle {
-
   position:relative;
+}
+button{
+  position: right;
+  font-family: 'Indie Flower', cursive;
+  font-size: 200%;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid b;
+  color: green;
+  background-color: #7F4A39;
 }
 img{
   display:block;
 }
 h1{
-  color: Green;
-  position: float center;
+  color: #4EB233;
+  width:auto;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+}
+h2{
+  color: red;
+  text-align: center
+}
+p{
+  color: #4EB233;
+  position:left;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
 }

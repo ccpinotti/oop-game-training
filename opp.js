@@ -15,28 +15,20 @@ $(document).ready(function() {
   $(document).keypress(function(e) {
     if (e.key === "a") {
       $("#turtle").animate({
-        left: '+=100px'
+        left: '+=75px'
       });
+      // second part declares the winner
       if (parseInt($turtle.css('left')) >= 710) {
         $('h2').text('The Turtle Wins!!');
         document.onkeydown = function(e) {
           return false;
-
-      //These were just a couple of the many attempts I made to stop my racers from fleeing.
-          // function pause() {
-          //     console.log("paused ok");
-          //     var animation = document.getElementById("#turtle");
-          //     animation.pause();
-}
-          // $turtle.(1000);
         }
-        // second part declares the winner and disables keyboard function
         console.log(parseInt($turtle.css('left')));
 
       }
     } else if (e.key === "l") {
       $("#rabbit").animate({
-        left: '+=100px'
+        left: '+=75px'
       });
       if (parseInt($rabbit.css('left')) >= 710) {
         $('h2').text('The Rabbit Wins!!');
@@ -45,22 +37,22 @@ $(document).ready(function() {
         }
       }
     }
-    // reset both characters, removes the win text, and restores keyboard functionality
-    function resetMe() {
-      $("#rabbit").css({
-        left: 0
-      });
-      $("#turtle").css({
-        left: 0
-      });
-      $('h2').remove();
-      document.onkeydown = function(e) {
-        return true;
-      }
-    }
-
-    $("#reset").click(function() {
-      resetMe();
+  // reset both characters and remove the win text
+  function resetMe() {
+    $("#rabbit").css({
+      left: 0
     });
+    $("#turtle").css({
+      left: 0
+    });
+    $('h2').remove();
+    document.onkeydown = function(e) {
+      return true;
+    }
+  }
+
+  $("#reset").click(function() {
+    resetMe();
   });
+});
 });

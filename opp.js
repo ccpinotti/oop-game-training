@@ -6,15 +6,16 @@ $(document).ready(function() {
   $(document).keypress(function(e) {
     if (e.key === "a") {
       $("#turtle").animate({
-        left: '+=25px'
+        left: '+=75px'
       });
       if (parseInt($turtle.css('left')) >= 1000){
         $('h2').text('The Turtle Wins!!');
+        console.log(parseInt($turtle.css('left')));
 
       }
     } else if (e.key === "l") {
       $("#rabbit").animate({
-        left: '+=25px'
+        left: '+=75px'
       });
       if (parseInt($rabbit.css('left')) >= 1000){
         $('h2').text('The Rabbit Wins!!');
@@ -29,6 +30,7 @@ $(document).ready(function() {
     $("#turtle").css({
       left: 0
     });
+    $('h2').remove();
     //reset other player
   }
 

@@ -1,15 +1,20 @@
 body {
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
     background-image: url(https://s-media-cache-ak0.pinimg.com/originals/27/72/88/277288be0b6f38eeee957bc9ab77b55e.jpg);
-
 }
+/*#race {
+  height: 100vh;
+}*/
+
 #rabbit {
   position: relative;
-  padding-top:300px;
+
 }
 #turtle {
   position:relative;
+
 }
 button{
   position: right;
@@ -18,9 +23,10 @@ button{
   height: 100px;
   width: 100px;
   border-radius: 100%;
-  border: 1px solid b;
+  border: 1px solid black;
   color: green;
   background-color: #7F4A39;
+  text-shadow: 2px 2px black;
 }
 img{
   display:block;
@@ -32,14 +38,18 @@ h1{
   text-align: center;
   font-weight: bold;
   font-size: 90px;
+  text-shadow: 2px 2px black;
 }
 h2{
-  color: red;
-  text-align: center
+  color: #4EB233;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px black;
 }
 p{
   color: #4EB233;
   position:left;
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
+  text-shadow: 2px 2px black;
 }

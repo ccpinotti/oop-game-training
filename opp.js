@@ -1,6 +1,12 @@
 $(document).ready(function() {
   var $turtle = $('#turtle');
   var $rabbit = $('#rabbit');
+  myAudio = new Audio('sounds/269559__vonora__sussex-woodland-meadow-bird-sounds-evening.mp3'); 
+  myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+    }, false);
+    myAudio.play();
 
 
   $(document).keypress(function(e) {

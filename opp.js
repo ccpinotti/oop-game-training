@@ -1,34 +1,43 @@
+// game will be ready upon page loading
 $(document).ready(function() {
   var $turtle = $('#turtle');
   var $rabbit = $('#rabbit');
-  myAudio = new Audio('sounds/269559__vonora__sussex-woodland-meadow-bird-sounds-evening.mp3'); 
+  // audio will continue on loop, nature sounds
+  myAudio = new Audio('sounds/269559__vonora__sussex-woodland-meadow-bird-sounds-evening.mp3');
   myAudio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
-    }, false);
-    myAudio.play();
+  }, false);
+  myAudio.play();
 
 
+  // this loop contains the functions that move the characters
   $(document).keypress(function(e) {
     if (e.key === "a") {
       $("#turtle").animate({
-        left: '+=75px'
+        left: '+=100px'
       });
-      if (parseInt($turtle.css('left')) >= 1000){
+      // secnd part declares the winner
+      if (parseInt($turtle.css('left')) >= 710) {
         $('h2').text('The Turtle Wins!!');
+        document.onkeydown = function(e) {
+          return false;
+        }
         console.log(parseInt($turtle.css('left')));
 
       }
     } else if (e.key === "l") {
       $("#rabbit").animate({
-        left: '+=75px'
+        left: '+=100px'
       });
-      if (parseInt($rabbit.css('left')) >= 1000){
+      if (parseInt($rabbit.css('left')) >= 710) {
         $('h2').text('The Rabbit Wins!!');
+        document.onkeydown = function(e) {
+          return false;
+        }
       }
     }
-  });
-
+  // reset both characters and remove the win text
   function resetMe() {
     $("#rabbit").css({
       left: 0
@@ -37,26 +46,13 @@ $(document).ready(function() {
       left: 0
     });
     $('h2').remove();
-    //reset other player
+    document.onkeydown = function(e) {
+      return true;
+    }
   }
 
   $("#reset").click(function() {
-
     resetMe();
   });
-  // el.onclick = reload();
-
-  // document.getElementById("Reset").onclick = function() {
-  //   document.getElementById("button").value = "";
-  // };
-
-
-  //   $('button').on('click',function() {
-  //   $(".key").text("")
-  //
-  // });
-  // check window width
-  // compare width turtle/rabbit position
-  // check for winner
-
+ });
 });

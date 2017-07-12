@@ -17,19 +17,27 @@ You've learned about OOP, but let's look at how to **incorporate object oriented
 
 3. The two players will use A and L to move across the screen.
 
-4.First one to the end wins
-  (figure out how to track that)
+4. First one to the end wins
+**racers**
+ - 'rabbitImage' (string)
+ - 'turtleImage' (String)
+ - 'moveRacer' (function)
+**the track**
+ - 'backgroundImage' (string)
+ - 'audioInLoop' (boolean)
+ - 'hasWon' (boolean)
+ 
 
 
 
 
 ### Racing Game Story
 1. The racing game is set up between two players, that will race cars across the board.
-2. The players will be able to advance the car 5px per click. 
-3. Both users will have different cars, but the same attributes making everything equal. 
-4. Once a player reaches the other side a message will pop up proclaiming them the winner. 
-5. The game will also have a reset button. 
-6. Sounds can be added to the cars so that each click makes a engine noise. 
+2. The players will be able to advance the car 5px per click.
+3. Both users will have different cars, but the same attributes making everything equal.
+4. Once a player reaches the other side a message will pop up proclaiming them the winner.
+5. The game will also have a reset button.
+6. Sounds can be added to the cars so that each click makes a engine noise.
 7. One player will use the A button and the other will use L. The player can only go in one direction across the screen.
 
 **Car**
@@ -40,7 +48,7 @@ You've learned about OOP, but let's look at how to **incorporate object oriented
 <details><summary>click for game exaamples</summary>
   - 'hasWon' (boolean)
   - 'background-image'
-  
+
 
 
 ### Check for Understanding
